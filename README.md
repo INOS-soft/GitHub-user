@@ -1,12 +1,16 @@
-IdentityManager
-============================
-[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/IdentityManager/IdentityManager?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+# Python for Actions
+This repository contains the code and scripts that we use to build Python packages used in [virtual-environments](https://github.com/actions/virtual-environments) and accessible through the [setup-python](https://github.com/actions/setup-python) Action.  
+File [versions-manifest.json](./versions-manifest.json) contains the list of available and released versions.  
 
-**current status: inactive, and no longer supported**
+> Caution: this is prepared for and only permitted for use by actions `virtual-environments` and `setup-python` action.
 
-## Overview ##
+**Status**: Currently under development and in use for beta and preview actions.  This repo is undergoing rapid changes.
 
-IdentityManager is a tool for developers and/or administrators to manage the identity information for users of their applications. This includes creating users, editing user information (passwords, email, claims, etc.) and deleting users. It provides a modern replacement for the ASP.NET WebSite Administration tool that used to be built into Visual Studio.
+Some versions are pre-installed on [virtual-environments](https://github.com/actions/virtual-environments) images.  
+More versions will (soon!) be available to install on-the-fly through the [`setup-python`](https://github.com/actions/setup-python) action.
 
-Documentation and more information can be found on the [wiki](https://github.com/IdentityManager/IdentityManager/wiki).
+## Adding new versions
+We are trying to build and release new versions of Python as soon as they are released. Please open an issue in [actions/virtual-environments](https://github.com/actions/virtual-environments) if any versions are missing.
 
+## Contribution
+Contributions are welcome! See [Contributor's Guide](./CONTRIBUTING.md) for more details about contribution process and code structure
