@@ -1,42 +1,34 @@
 {
   "compilerOptions": {
-    "outDir": "dist",
     "module": "esnext",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
     "moduleResolution": "node",
-    "jsx": "react-jsx",
-    "noFallthroughCasesInSwitch": true,
-    "sourceMap": true,
-    "declaration": true,
+    "target": "es2017",
     "esModuleInterop": true,
+    "importHelpers": true,
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
     "noImplicitReturns": true,
-    "noImplicitThis": true,
-    "noImplicitAny": true,
-    "strictNullChecks": true,
-    "suppressImplicitAnyIndexErrors": true,
-    "allowSyntheticDefaultImports": true,
-    "target": "es5",
-    "allowJs": true,
-    "skipLibCheck": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": true,
+    "sourceMap": true,
+    "jsx": "react",
     "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true
+    "noEmit": true,
+    "outDir": "./out",
+    "lib": ["ES2017", "DOM", "DOM.Iterable", "ES2018.Promise", "ES2020.string"]
   },
-  "include": [
-    "src",
-    "./src/**/*.ts"
+  "plugins": [
+    {
+      "name": "typescript-tslint-plugin"
+    }
   ],
+  "include": ["app/**/*.ts", "app/**/*.tsx", "app/**/*.d.tsx"],
   "exclude": [
     "node_modules",
+    "app/node_modules",
     "dist",
-    "example",
-    "example_backend",
-    "test"
-  ]
+    "out",
+    "app/src/highlighter"
+  ],
+  "compileOnSave": false
 }
